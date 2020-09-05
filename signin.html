@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Dear Diary</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="//cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+		<script src="scripts/database.js"></script>
+		<script src="scripts/account.js"></script>
+
+    <div id="navcontainer">
+    <ul id="navlist">
+    <li><a href="index.html"       											>Home</a></li>
+    <li id="menuLogin"><a href="login.html"       			>Login</a></li>
+    <li id="menuRegister"><a href="registration.html"		>Registration</a></li>
+		<li id="menuLogout"><a onclick="logout()"			 			>Logout</a></li>
+    <li><a href="solutions.html"   											>High-Tech Solutions</a></li>
+    <li><a href="covid.html"       											>Covid-19</a></li>
+    <li><a href="justice.html"     											>Social Justice</a></li>
+    <li><a href="fires.html"       											>Wildfires</a></li>
+    <li><a href="view.html"        											>View Diaries</a></li>
+    <li><a href="relax.html"       											>Relax and Fun</a></li>
+    </ul>
+    </div>
+		<div style="float: right; padding-right:50px; color: white; display:none; font-weight: bold; text-decoration:underline; font-size: 20px" id="divCurrentUser">
+			<label>Logged In As: </label>
+			<label id="lblCurrentUserName"></label>
+		</div>
+
+    <div class="wrapper" style="width:100%">
+    <h1>Sign In</h1>
+    <article>
+<form >
+ <ul>
+  <li>
+    <label for="txtEmail">Email:</label>
+    <input type="text" id="txtEmail" name="user_name">
+  </li>
+  <li>
+    <label for="txtPassword">Password:</label>
+    <input type="password" id="txtPassword" name="user_password">
+  </li>
+ </ul>
+	<div class="buttonbuddies">
+    <p><a class="button" onclick="userSignIn()">Login</a></p>
+    <p><a class="button" href="index.html">Cancel</a></p>
+  </div>
+</div>
+</form>
+  </article>
+    <div id="footer">
+      <ul id="footlist">
+        <li id="panel1"><a href="#">&nbsp;</a></li>
+        <li id="panel2"><a href="#">&nbsp;</a></li>
+        <li id="panel3"><a href="#">&nbsp;</a></li>
+        <li id="panel4"><a href="#">&nbsp;</a></li>
+        <li id="panel5"><a href="#">&nbsp;</a></li>
+        <li id="panel6"><a href="#">&nbsp;</a></li>
+    </div>
+  </body>
+</html>

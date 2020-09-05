@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Covid-19 Infinity</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="//cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+		<script src="scripts/database.js"></script>
+		<script src="scripts/account.js"></script>
+
+    <div id="navcontainer">
+    <ul id="navlist">
+    <li><a href="index.html"       											>Home</a></li>
+    <li id="menuLogin"><a href="login.html"       			>Login</a></li>
+    <li id="menuRegister"><a href="registration.html"		>Registration</a></li>
+		<li id="menuLogout"><a onclick="logout()"			 			>Logout</a></li>
+    <li><a href="solutions.html"   											>High-Tech Solutions</a></li>
+    <li><a href="covid.html"       											>Covid-19</a></li>
+    <li><a href="justice.html"     											>Social Justice</a></li>
+    <li><a href="fires.html"       											>Wildfires</a></li>
+    <li><a href="view.html"        											>View Diaries</a></li>
+    <li><a href="relax.html"       											>Relax and Fun</a></li>
+    </ul>
+    </div>
+		<div style="float: right; padding-right:50px; color: white; display:none; font-weight: bold; text-decoration:underline; font-size: 20px" id="divCurrentUser">
+			<label>Logged In As: </label>
+			<label id="lblCurrentUserName"></label>
+		</div>
+<div class="wrapper" style="width: 100%">
+   <h1>Covid-19 Infinity</h1>
+  <article>
+   <p><img align="left" style="width: 100px; margin-right: 5px;" src="https://wealtherinfinity-1--sjj3.repl.co/images/covid.logo.png" alt="COVID-19 Logo" />Welcome to COVID-19 Infinity. This is a website designed to help people who would like to make and share diaries entries, learn more about COVID-19, and know more about wildfires and other weather events. Below is a selection of links to learn more and interact with this webpage.</p>
+ <br>
+<section id="hightech">
+<h2>High Tech Solutions</h2>
+<p>Here are some interesting articles and videos about the world of High Tech:
+  By providing the videos and articles we are encouraging the community to learn more about COVID-19 and deliver high tech solutions to them.
+<div class="buttonbuddies"><p><a class="button hitek" href="solutions.html">High Tech Solutions</a></p></div>
+</section>
+
+<section class="content iboxes" style="width:100%">
+  <div class="columns">
+    <aside class="sidebar-first ibox">
+      <p><a href="covid.html"><img alt="covid" src="https://wealtherinfinity-1--sjj3.repl.co/images/ibox.covid.jpg" /></a></p>
+      <h2>Covid-19</h2>
+      <p>Get important information about COVID-19, local testing sites, and health care resources near you. Learn what new solutions are currently developing.</p>
+        <div class="buttonbuddies"><p><a class="button" href="covid.html">Covid-19</a></p></div>
+    </aside>
+    <aside class="main ibox">
+      <p><a href="view.html"><img alt="covid" src="https://wealtherinfinity-1--sjj3.repl.co/images/ibox.diary.jpg" /></a></p>
+      <h2>View Diaries</h2>
+      <p>View recent diary entries to edit, share, and comment. Share thoughts about the pandemic, share new information, and discuss local solutions and ideas.</p>
+        <div class="buttonbuddies"><p><a class="button" href="view.html">Diaries</a></p></div>
+    </aside>
+    <aside class="sidebar-second ibox">
+      <p><a href="fires.html"><img alt="weather" src="https://wealtherinfinity-1--sjj3.repl.co/images/ibox.fire.jpg" /></a></p>
+      <h2>Wildfires</h2>
+      <p>Learn about wildfires, view emergency information resourcs, and how to prepare. Know how wildfires can complicate this current climate.</p>
+        <div class="buttonbuddies"><p><a class="button" href="fires.html">Wildfires</a></p></div>
+    </aside>
+  </div>
+</section>
+      <h2 class="goback"><a href="index.html">Top</a></h2>
+</article>
+</div>
+    <div id="footer">
+      <ul id="footlist">
+        <li id="panel1"><a href="#">&nbsp;</a></li>
+        <li id="panel2"><a href="#">&nbsp;</a></li>
+        <li id="panel3"><a href="#">&nbsp;</a></li>
+        <li id="panel4"><a href="#">&nbsp;</a></li>
+        <li id="panel5"><a href="#">&nbsp;</a></li>
+        <li id="panel6"><a href="#">&nbsp;</a></li>
+    </div>
+  </body>
+</html>

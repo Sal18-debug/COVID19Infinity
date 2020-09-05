@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Dear Diary</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+<script src="//cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+		<script src="scripts/database.js"></script>
+		<script src="scripts/account.js"></script>
+		
+    <div id="navcontainer">
+    <ul id="navlist">
+    <li><a href="index.html"       											>Home</a></li>
+    <li id="menuLogin"><a href="login.html"       			>Login</a></li>
+    <li id="menuRegister"><a href="registration.html"		>Registration</a></li>
+		<li id="menuLogout"><a onclick="logout()"			 			>Logout</a></li>
+    <li><a href="solutions.html"   											>High-Tech Solutions</a></li>
+    <li><a href="covid.html"       											>Covid-19</a></li>
+    <li><a href="justice.html"     											>Social Justice</a></li>
+    <li><a href="fires.html"       											>Wildfires</a></li>
+    <li><a href="view.html"        											>View Diaries</a></li>
+    <li><a href="relax.html"       											>Relax and Fun</a></li>
+    </ul>
+    </div>
+		<div style="float: right; padding-right:50px; color: white; display:none; font-weight: bold; text-decoration:underline; font-size: 20px" id="divCurrentUser">
+			<label>Logged In As: </label>
+			<label id="lblCurrentUserName"></label>
+		</div>
+
+    <div class="wrapper" style="width:100%">
+    <h1>Welcome!</h1>
+
+  <section class="content">
+    <div class="columns">
+
+      <aside class="sidebar-second">
+        <h2 style="padding: 0 100px;">Donations</h2>
+<p style="padding: 0 100px;">Want to help others in need during this pandemic? Check out the Donations portal to receive more inforation about Girls Career on Cloud and charity organizations helping people around the world get the education and assistance they need!</p>
+  <div class="buttonbuddies">
+    <p><a class="button" href="donate.html">Donate</a></p>
+  </div>
+      </aside>
+
+      <aside class="sidebar-first">
+<div style="padding: 0 100px;">
+<p>Sign up now to become a member!<br />Create your own diary<br />Share your diary with friends and family</p>
+<p>Join your fellow students, friends, and others at appropriate ages.</p>
+<p>Portals for children, adults, and seniors!<br />People of all ages are welcome!</p>
+<p>Get suggestions, ideas, and other content from other users</p>
+<p>Games, Blogs, Music, Sports, Entertainment, Meditation techniques</p>
+<p>Become a user, share your thoughts with others, and help build a  supportive community of users around the world!</p>
+</div>
+  <div class="buttonbuddies">
+    <p><a class="button" href="signin.html">Login</a></p>
+    <p><a class="button" href="registration.html">Register</a></p>
+  </div>
+</aside>
+
+       </div>
+  </section>
+</div>   
+
+    <div id="footer">
+      <ul id="footlist">
+        <li id="panel1"><a href="#">&nbsp;</a></li>
+        <li id="panel2"><a href="#">&nbsp;</a></li>
+        <li id="panel3"><a href="#">&nbsp;</a></li>
+        <li id="panel4"><a href="#">&nbsp;</a></li>
+        <li id="panel5"><a href="#">&nbsp;</a></li>
+        <li id="panel6"><a href="#">&nbsp;</a></li>
+    </div>
+  </body>
+</html>

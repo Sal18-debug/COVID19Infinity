@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Dear Diary</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+<script src="//cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+		<script src="scripts/database.js"></script>
+		<script src="scripts/account.js"></script>
+<script type="text/javascript">
+    function toggle(obj) {
+      var obj=document.getElementById(obj);
+      if (obj.style.display == "block") obj.style.display = "none";
+      else obj.style.display = "block";
+    }
+</script>
+
+    <div id="navcontainer">
+    <ul id="navlist">
+    <li><a href="index.html"       											>Home</a></li>
+    <li id="menuLogin"><a href="login.html"       			>Login</a></li>
+    <li id="menuRegister"><a href="registration.html"		>Registration</a></li>
+		<li id="menuLogout"><a onclick="logout()"			 			>Logout</a></li>
+    <li><a href="solutions.html"   											>High-Tech Solutions</a></li>
+    <li><a href="covid.html"       											>Covid-19</a></li>
+    <li><a href="justice.html"     											>Social Justice</a></li>
+    <li><a href="fires.html"       											>Wildfires</a></li>
+    <li><a href="view.html"        											>View Diaries</a></li>
+    <li><a href="relax.html"       											>Relax and Fun</a></li>
+    </ul>
+    </div>
+		<div style="float: right; padding-right:50px; color: white; display:none; font-weight: bold; text-decoration:underline; font-size: 20px" id="divCurrentUser">
+			<label>Logged In As: </label>
+			<label id="lblCurrentUserName"></label>
+		</div>
+
+<div class="wrapper" style="width:100%">
+  <bentry>
+  <header class="header"><h1>View Diary</h1></header>
+  <section class="content">
+
+		<div id="bentries">
+			<div class="bentry">
+				<h3 onClick="toggle('body1')" style="color: green"><em>June 5, 2020</em> Day 57 at Home</h3>
+				<div id="body1" style="display:none;">
+					<p style="color: green">Another day stuck at home.</p>
+					<p style="color: green">Nothing to do but count my socks.</p>
+					<p style="color: green">I wish I could go outside and pay with my friends but everyone is in lockdown.</p>
+					<p style="color: green">I hope we are able to get together again soon.</p>
+				</div>
+			</div>
+
+			<div class="bentry">
+				<h3 onClick="toggle('body2')" style="color: purple"><em>May 21, 2020</em> Sourdough Bread</h3>
+				<div id="body2" style="display:none;">
+					<p style="color: purple">Everyone online is making bread!</p>
+					<p style="color: purple">I guess I'll have to try it too.</p>
+					<p style="color: purple">Next time I go to the grocery store I will see if I can find all of the ingredients.</p>
+					<p style="color: purple">Now I'm hungry.  I hope there's something to eat in the house!</p>
+				</div>
+			</div>
+		</div>
+
+  </section>
+  </bentry>
+</div>
+    <div id="footer">
+      <ul id="footlist">
+        <li id="panel1"><a href="#">&nbsp;</a></li>
+        <li id="panel2"><a href="#">&nbsp;</a></li>
+        <li id="panel3"><a href="#">&nbsp;</a></li>
+        <li id="panel4"><a href="#">&nbsp;</a></li>
+        <li id="panel5"><a href="#">&nbsp;</a></li>
+        <li id="panel6"><a href="#">&nbsp;</a></li>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Dear Diary</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+<script src="//cdn.jsdelivr.net/npm/pouchdb@7.2.1/dist/pouchdb.min.js"></script>
+		<script src="scripts/database.js"></script>
+		<script src="scripts/account.js"></script>
+		
+    <div id="navcontainer">
+    <ul id="navlist">
+    <li><a href="index.html"       											>Home</a></li>
+    <li id="menuLogin"><a href="login.html"       			>Login</a></li>
+    <li id="menuRegister"><a href="registration.html"		>Registration</a></li>
+		<li id="menuLogout"><a onclick="logout()"			 			>Logout</a></li>
+    <li><a href="solutions.html"   											>High-Tech Solutions</a></li>
+    <li><a href="covid.html"       											>Covid-19</a></li>
+    <li><a href="justice.html"     											>Social Justice</a></li>
+    <li><a href="fires.html"       											>Wildfires</a></li>
+    <li><a href="view.html"        											>View Diaries</a></li>
+    <li><a href="relax.html"       											>Relax and Fun</a></li>
+    </ul>
+    </div>
+		<div style="float: right; padding-right:50px; color: white; display:none; font-weight: bold; text-decoration:underline; font-size: 20px" id="divCurrentUser">
+			<label>Logged In As: </label>
+			<label id="lblCurrentUserName"></label>
+		</div>
+
+<div class="wrapper" style="width:100%">
+  <entry>
+  <header class="header"><h1>View Diaries</h1></header>
+  <section class="content">
+    <div class="columns">
+      <aside class="sidebar-first">
+        <h2>Entry #1</h2>
+          <div class="buttonbuddies">
+            <p><a class="button" href="#">&#9996;</a></p>
+            <p><a class="button" href="#">E</a></p>
+          </div>
+        <p>Hello Everyone</p>
+        <p>It seems that everything that has happened has been going on for years, even though the year hasn’t even ended yet. I never would ever suspected that this could have happened on such a grand scale around the world. So many things have changed, and it is still hard to adjust to all these changes. I have been thinking about what I can do during this pandemic. Thankfully this website provides me with a great deal of information about the virus. I should look into more to stay safe. Hope to catch up with all you later.</p>
+        <p> Stay Safe!</p>
+        <p> Jane Smith</p>
+      <h2 class="goback"><a href="index.html">Back</a></h2>
+      </aside>
+      <main class="main">
+        <h2>Entry #2</h2>
+          <div class="buttonbuddies">
+            <p><a class="button" href="#">&#9996;</a></p>
+            <p><a class="button" href="#">E</a></p>
+          </div>
+        <p>Hello Everyone</p>
+          <p>Now we got wildfires. Seems like everything around me is going to pieces. Not sure if I can handle this on my own. Anytime I read the news online, or try to watch regular tv, I am just reminded of everything just burning around me. I feel I have to wear my masks inside my home too. Now going outside and walking around the city seems to me to be no longer an option for me. Even if I wanted to go outside, most of the time I just see smoke and fires near the city; even my mask does not help me much through the bad air. I wonder what I can do with my spare time. Maybe this website can help me get through this. Remember to stay safe everyone,</p>
+        <p>John Martiniez</p>
+      <h2><a href="index.html">&nbsp;</a></h2>
+      </main>
+      <aside class="sidebar-second">
+        <h2>Entry #3</h2>
+          <div class="buttonbuddies">
+            <p><a class="button" href="#">&#9996;</a></p>
+            <p><a class="button" href="#">E</a></p>
+          </div>
+          <p>Fed up!</p>
+        <p>All this crazy stuff happening right now, I am sick of it. We are just waiting for some solution to happen, and we are just idling around our homes. Someone must do something, I am tired of being stuck at home for most of my time. To anyone who is interested, we should band together and discuss what we can do. Text messaging, video chat, anything to get our minds and mouths moving again! Thankfully, this website has lists of resources to see what potential solutions we can work on. I am just tired of staying here and doing nothing. Hope to see anyone interested in discussing this further. See you later</p>
+        <p>Michelle Jackson</p>
+      <h2><a href="index.html">&nbsp;</a></h2>
+      </aside>
+    </div>
+
+  </section>
+  </entry>
+</div>
+    <div id="footer">
+      <ul id="footlist">
+        <li id="panel1"><a href="#">&nbsp;</a></li>
+        <li id="panel2"><a href="#">&nbsp;</a></li>
+        <li id="panel3"><a href="#">&nbsp;</a></li>
+        <li id="panel4"><a href="#">&nbsp;</a></li>
+        <li id="panel5"><a href="#">&nbsp;</a></li>
+        <li id="panel6"><a href="#">&nbsp;</a></li>
+    </div>
+  </body>
+</html>
