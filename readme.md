@@ -5,7 +5,7 @@ The title of this project is COVID-19 Infinity.
 Team Members
 
 Sally Jain, Marthe-Sarah Nkambou Tchunkuo, 
-Elizabeth B 
+Elizabeth Bazhenov
 
 Inspiration behind Project/What led to this project?
 
